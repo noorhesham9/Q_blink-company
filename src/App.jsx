@@ -10,6 +10,8 @@ function App() {
       <Header />
       <Landing />
       {/* this is a comment from noor  */}
+      {/* this is a comment from noor  */}
+      {/* this is a comment from noor  */}
     </>
   );
 }
