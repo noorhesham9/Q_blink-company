@@ -10,16 +10,19 @@
   position: relative;
   gap: 40px;
   width: 100%;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .LAnding__title {
   font-size: 22px;
+  max-width: 52%;
 }
 .LAnding__title span {
   color: var(--primary-color);
+  font-family: var(--second-font);
 }
 
 .landing__title-h2 {
@@ -34,6 +37,12 @@
 
 .landing__title-p {
   padding-bottom: 20px;
+  font-size: 19px;
+}
+.landing__title-p span {
+  font-weight: 700;
+  font-size: 19px;
+  font-family: var(--second-font);
 }
 
 .swiperContaienr {
@@ -54,6 +63,10 @@
 .landing__title-button {
   margin-top: 20px !important;
 }
+.landing__title-button.landing__title-button-project {
+  margin-left: 20px !important;
+}
+
 .landing__Images_image {
   border-radius: 1rem;
   display: flex;
@@ -79,7 +92,7 @@
 
 .custom-shape-divider-bottom-1689188262 {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -111,4 +124,52 @@
   bottom: 0;
   left: calc(50% - 0px);
   transform: translate(-50%, 50%);
+}
+
+@media (max-width: 1200px) {
+  .container__1 {
+    padding: 0;
+  }
+  .Landing__Images {
+    display: none;
+  }
+  .Landing__container {
+    justify-content: center;
+  }
+  .LAnding__title {
+    text-align: center;
+    max-width: 100%;
+  }
+  .shape {
+    display: none;
+  }
+  .landing__title-button-contact {
+    max-width: 150px;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+  }
+  .landing__title-button-contact .sharta {
+    left: 50% !important;
+    transform: translateX(-50%) rotate(90deg);
+    bottom: -20px;
+  }
+  .landing__title-button-contact .MuiButton-endIcon svg {
+    font-size: 15px !important;
+  }
+  .landing__title-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing__title-button-project {
+    margin-top: 25px !important;
+  }
+}
+@media (max-width: 600px) {
+  .custom-shape-divider-bottom-1689188262 svg {
+    height: 70px;
+  }
 }/*# sourceMappingURL=landing.css.map */

@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "./landing.css";
+import { Container } from "@mui/material";
 import "swiper/css";
 import SendIcon from "@mui/icons-material/Send";
-
 import "swiper/css/pagination";
 import { Button, IconButton } from "@mui/material";
 const Image1 = (width) => {
@@ -173,16 +173,18 @@ const Landing = () => {
         />
         <Shape className="shape-class-2" />
       </div>
-      <div className="Landing__container container__1 container ">
+
+      <Container className="Landing__container container__1">
         <div className="LAnding__title ">
           Welcome <span>To</span>
           <h2 className="landing__title-h2">
             <span className="text-cs">Q-blink</span> Company
           </h2>
           <p className="landing__title-p">
-            we are a <span>Bamboo Company</span>. we are selling bamboo products
+            we are a <span>Frontend Company</span>. we are creating a full
+            responsive websites
           </p>
-          <div className="landing__title-socials">
+          {/* <div className="landing__title-socials">
             <div className="socials">
               <IconButton>
                 <FacebookOutlinedIcon
@@ -209,55 +211,56 @@ const Landing = () => {
                 />
               </IconButton>
             </div>
-          </div>
-          <Button
-            href="#contact"
-            className="landing__title-button landing__title-button-contact"
-            variant="contained"
-            sx={{
-              posiyion: "relative",
-              transition: "0.2s",
-              backgroundColor: "var(--primary-color)",
-              color: "black",
-              "&:hover": {
-                border: "1px solid var(--primary-color)",
-                color: "var(--primary-color)",
-                backgroundColor: "black",
-                ">span": {
-                  ".MuiSvgIcon-root": {
-                    color: "var(--primary-color)",
+          </div> */}
+          <div className="landing__title-buttons">
+            <Button
+              href="#contact"
+              className="landing__title-button landing__title-button-contact"
+              variant="contained"
+              sx={{
+                posiyion: "relative",
+                transition: "0.2s",
+                backgroundColor: "var(--primary-color)",
+                color: "black",
+                "&:hover": {
+                  border: "1px solid var(--primary-color)",
+                  color: "var(--primary-color)",
+                  backgroundColor: "black",
+                  ">span": {
+                    ".MuiSvgIcon-root": {
+                      color: "var(--primary-color)",
+                    },
                   },
                 },
-              },
-            }}
-            endIcon={
-              <SendIcon
-                sx={{
-                  transition: "0.3s",
-                  color: "black",
-                }}
-              />
-            }
-            size="large">
-            Contact US
-            <span
-              style={{
-                width: "22px",
-                height: "2px",
-                backgroundColor: "var(--primary-color)",
-                position: "absolute",
-                right: "-22px",
-              }}></span>
-          </Button>
-          <Button
-            className="landing__title-button landing__title-button-project"
-            sx={{
-              position: "relative",
-              right: "-30px",
-              color: "var(--primary-color)",
-            }}>
-            Projects
-          </Button>
+              }}
+              endIcon={
+                <SendIcon
+                  sx={{
+                    transition: "0.3s",
+                    color: "black",
+                  }}
+                />
+              }
+              size="large">
+              Contact US
+              <span
+                className="sharta"
+                style={{
+                  width: "22px",
+                  height: "2px",
+                  backgroundColor: "var(--primary-color)",
+                  position: "absolute",
+                  right: "-22px",
+                }}></span>
+            </Button>
+            <Button
+              className="landing__title-button landing__title-button-project"
+              sx={{
+                color: "var(--primary-color)",
+              }}>
+              Projects
+            </Button>
+          </div>
         </div>
 
         <div className="Landing__Images">
@@ -295,8 +298,8 @@ const Landing = () => {
             </SwiperSlide> */}
           </Swiper>
         </div>
-      </div>
-
+        {/* </div> */}
+      </Container>
       <div className="bottom-button"></div>
       <div className="custom-shape-divider-bottom-1689188262">
         <svg
