@@ -362,12 +362,6 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__logo">
-        {/* <img
-          className="header__logo-img"
-          src={LogoforHeaderWithName}
-          alt=""
-          style={{ maxHeight: "100%" }}
-        /> */}
         <ImageLogo />
       </div>
 
