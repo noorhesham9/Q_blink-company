@@ -1,0 +1,114 @@
+.landing__section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: var(--first-gradient);
+  padding-top: 100px;
+}
+
+.Landing__container {
+  position: relative;
+  gap: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LAnding__title {
+  font-size: 22px;
+}
+.LAnding__title span {
+  color: var(--primary-color);
+}
+
+.landing__title-h2 {
+  padding-bottom: 10px;
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%), 2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgba(0, 0, 0, 0.2);
+}
+.landing__title-h2 span {
+  color: var(--primary-color);
+}
+
+.landing__title-p {
+  padding-bottom: 20px;
+}
+
+.swiperContaienr {
+  background-color: black;
+  border-radius: 1rem;
+  padding: 20px !important;
+  width: 100%;
+  animation: profile__animate 9s ease-in-out infinite;
+  box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3019607843);
+  height: auto;
+}
+
+.Landing__Images {
+  width: 490px;
+  max-width: 100%;
+}
+
+.landing__title-button {
+  margin-top: 20px !important;
+}
+.landing__Images_image {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.svgContain {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-shape-divider-bottom-1689188262 {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1689188262 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1689188262 .shape-fill {
+  fill: url(#MyGradient);
+}
+
+.shape-class-1 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 0px);
+  transform: translate(-50%, -50%);
+}
+
+.shape-class-2 {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 0px);
+  transform: translate(-50%, 50%);
+}/*# sourceMappingURL=landing.css.map */
