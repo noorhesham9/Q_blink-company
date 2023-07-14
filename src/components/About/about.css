@@ -1,0 +1,20 @@
+.textsContain p:last-child {
+  margin-bottom: 10px;
+}
+
+.readmore {
+  position: relative;
+  margin-bottom: 30px !important;
+}
+
+.buttooon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.thanks {
+  font-weight: 600 !important;
+  letter-spacing: 0.017em !important;
+  text-shadow: 3px 3px rgba(255, 247, 0, 0.15);
+}/*# sourceMappingURL=about.css.map */
