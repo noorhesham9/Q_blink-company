@@ -177,7 +177,7 @@ const Landing = () => {
         <div className="LAnding__title ">
           Welcome <span>To</span>
           <h2 className="landing__title-h2">
-            <span className="text-cs">EL-NAIRA</span> Company
+            <span className="text-cs">Q-blink</span> Company
           </h2>
           <p className="landing__title-p">
             we are a <span>Bamboo Company</span>. we are selling bamboo products
@@ -278,7 +278,7 @@ const Landing = () => {
                 <Image1 width={"300px"} />
               </div>
             </SwiperSlide>
-            <SwiperSlide className="landing__Images_image">
+            {/* <SwiperSlide className="landing__Images_image">
               <div className="svgContain">
                 <Image2 width={"300px"} />
               </div>
@@ -292,7 +292,7 @@ const Landing = () => {
               <div className="svgContain">
                 <Image4 width={"300px"} />
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>

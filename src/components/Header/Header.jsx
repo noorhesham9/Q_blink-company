@@ -387,10 +387,16 @@ const Header = () => {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">Works</a>
           </li>
           <li>
-            <a href="#products">Products</a>
+            <a href="#team">Team</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a href="#pricing">Pricing</a>
           </li>
           <li>
             <a href="#contacts">Contacts</a>

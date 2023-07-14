@@ -87,12 +87,13 @@
             transition: all 0.3s var(--transition);
             left: 0;
           }
-
-          &.active {
+        }
+        &.active {
+          a {
+            color: rgb(255, 247, 0);
             &::before {
               width: 60%;
             }
-            color: rgb(255, 247, 0);
           }
         }
       }
