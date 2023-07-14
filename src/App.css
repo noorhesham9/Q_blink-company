@@ -122,3 +122,12 @@ img {
 .section__subtitle {
   text-align: center;
 }
+.landing__title-h2 {
+  padding-bottom: 10px;
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%), 2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgba(0, 0, 0, 0.2);
+}
+.landing__title-h2 span {
+  color: var(--primary-color);
+}
