@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Landing />
-      <Landing />
+      {/* this is a comment from noor  */}
     </>
   );
 }
