@@ -1,35 +1,17 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { SectionWrapper } from "../../hoc";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { fadeIn, textVariant } from "../../utils/motion";
 import "./about.css";
 import { useState } from "react";
-const typographys = {
-  one: "Welcome to Q-Blink! We are a team of passionate developers who specialize in creating beautiful and functional frontend websites for businesses of all sizes. Our mission is to help our clients establish a strong online presence and achieve their digital goals through effective website development.",
-  two: "At Q-Blink, we understand that your website is often the first impression customers have of your business. That's why we take great care in designing and developing websites that not only look stunning, but also provide a seamless user experience. From the initial design concept to the final product, we work closely with our clients to ensure that every detail is just right.",
-  three:
-    "Our team has years of experience in web development, and we pride ourselves on staying up-to-date with the latest trends and technologies in the industry. We use cutting-edge tools and techniques to create websites that are fast, responsive, and optimized for search engines. Our expertise in frontend development includes HTML, CSS, JavaScript, and experience using the React framework.",
-  four: "At Q-Blink, we believe that building strong relationships with our clients is key to our success. We take the time to understand your business and your goals, and we work collaboratively with you to create a website that meets your specific needs. Whether you are looking to launch a brand new website or update an existing one or fix any bugs in your website, we are here to help.",
-};
+import { info } from "../../Constants/index";
 function About() {
-  const [showtypo, setshowtypo] = useState([
-    `${typographys.one}`,
-    `${typographys.two}`,
-  ]);
+  const [expanded, setExpanded] = useState(false);
 
-  const [showed, setshwed] = useState(false);
-  const clickSEEmoreHandle = () => {
-    {
-      showed
-        ? setshowtypo([`${typographys.one}`, `${typographys.two}`])
-        : setshowtypo([
-            ...showtypo,
-            `${typographys.three}`,
-            `${typographys.four}`,
-          ]);
-    }
-    setshwed(!showed);
+  const toggleExpansion = () => {
+    setExpanded(!expanded);
   };
+
   return (
     <Box className="section__gradient-1" py="100px">
       <Container className="containerforAbout">
@@ -48,36 +30,67 @@ function About() {
           style={{
             color: "var( --text-color)",
           }}>
-          <div className="textsContain">
-            {showtypo.map((p, index) => {
-              return (
-                <Typography
-                  className="typographyforABout"
-                  key={index}
-                  fontSize={{ xs: "16px", sm: "18px" }}
-                  mb="30px">
-                  {p}
-                </Typography>
-              );
-            })}
-          </div>
-          <div className="buttooon">
+          <Typography
+            className="typographyforABout"
+            fontSize={{ xs: "16px", sm: "18px" }}
+            mb="30px">
+            {info.one}
+          </Typography>
+          <Typography
+            className="typographyforABout"
+            fontSize={{ xs: "16px", sm: "18px" }}
+            mb="30px">
+            {info.two}
+          </Typography>
+          <AnimatePresence>
+            <motion.div
+              className="textsContain"
+              initial={{ height: "500px" }}
+              animate={{ height: expanded ? "220px" : "0" }}
+              transition={{ duration: 0.5 }}
+              style={{ overflow: "hidden" }}>
+              {expanded && (
+                <motion.div>
+                  <Typography
+                    className="typographyforABout"
+                    fontSize={{ xs: "16px", sm: "18px" }}
+                    mb="30px">
+                    {info.three}
+                  </Typography>
+                  <Typography
+                    className="typographyforABout"
+                    fontSize={{ xs: "16px", sm: "18px" }}
+                    mb="30px">
+                    {info.four}
+                  </Typography>
+                </motion.div>
+              )}
+            </motion.div>
+          </AnimatePresence>
+
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "end",
+              alignItems: "center",
+            }}>
             <Button
-              onClick={clickSEEmoreHandle}
-              className="readmore"
+              onClick={toggleExpansion}
               variant="outlined"
               sx={{
                 borderColor: "var(--primary-color)",
                 fontWeight: "bold",
                 color: "var(--primary-color)",
+                position: "relative",
+                marginBottom: "30px !important",
                 "&:hover": {
                   borderColor: "var(--border-color)",
                   color: "var(--text-color)",
                 },
               }}>
-              {showed ? "Read less" : "Read more"}
+              {expanded ? "Read less" : "Read more"}
             </Button>
-          </div>
+          </Box>
 
           <Typography
             className="thanks"
@@ -95,7 +108,6 @@ function About() {
               backgroundColor: "var(--primary-color)",
               color: "black",
               marginLeft: "10px",
-              // color: "var(--primary-color)",
               width: "fit-content",
               fontWeight: "600",
               border: "1px solid var(--primary-color)",
