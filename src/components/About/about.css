@@ -17,4 +17,34 @@
   font-weight: 600 !important;
   letter-spacing: 0.017em !important;
   text-shadow: 3px 3px rgba(255, 247, 0, 0.15);
+}
+
+@media (max-width: 500px) {
+  .AboutUS {
+    text-align: center;
+  }
+  .textsContain {
+    text-align: center;
+  }
+  .buttooon {
+    margin-top: 25px;
+    justify-content: center;
+  }
+  .thanks {
+    text-align: center;
+  }
+  .ourworksandbook {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+  }
+  .ourworksandbook .bookaCall,
+  .ourworksandbook .ourWorks {
+    width: 130px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=about.css.map */

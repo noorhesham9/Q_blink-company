@@ -17,8 +17,10 @@ function About() {
       <Container className="containerforAbout">
         <motion.div variants={textVariant()}>
           <Typography
+            className="AboutUS"
             sx={{
-              fontSize: "var(--h1-font-size)",
+              marginBottom: "7px",
+              fontSize: "35px",
               fontWeight: "bold",
               fontFamily: "var(--second-font)",
             }}>
@@ -101,9 +103,10 @@ function About() {
           </Typography>
         </motion.div>
 
-        <Stack spacing={4} direction="row">
+        <Stack className="ourworksandbook" spacing={4} direction="row">
           <Button
-            href="works"
+            className="ourWorks"
+            href="#works"
             sx={{
               backgroundColor: "var(--primary-color)",
               color: "black",
@@ -120,7 +123,8 @@ function About() {
             Our Works
           </Button>
           <Button
-            href="contact"
+            className="bookaCall"
+            href="#contact"
             sx={{
               backgroundColor: "var(--primary-color)",
               color: "black",
