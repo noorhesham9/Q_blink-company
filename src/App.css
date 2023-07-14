@@ -37,7 +37,12 @@ ul {
 a {
   text-decoration: none;
 }
-
+.color-primary-color {
+  color: var(--primary-color);
+}
+.background-primary-color {
+  background-color: var(--primary-color);
+}
 :root {
   --primary-color: rgb(255, 247, 0);
   --biggest-font-size: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
@@ -126,7 +131,9 @@ img {
   padding-bottom: 10px;
   font-size: var(--biggest-font-size);
   font-family: var(--second-font);
-  text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%), 2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
+    2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%),
+    5px 5px rgba(0, 0, 0, 0.2);
 }
 .landing__title-h2 span {
   color: var(--primary-color);
