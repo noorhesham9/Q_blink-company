@@ -20,9 +20,13 @@ function Input(Props) {
             bgcolor: "rgba(0,0,0,.5)",
             borderRadius: "10px",
           },
-          "& focus": {
-            border: "1px solid yellow",
+          "& .MuiInputLabel-root.Mui-focused": {
+            color: "var(--primary-color)",
           },
+          "& .MuiOutlinedInput-root:focus-within .MuiOutlinedInput-notchedOutline":
+            {
+              borderColor: "var(--primary-color)",
+            },
         }}
       />
     </Stack>

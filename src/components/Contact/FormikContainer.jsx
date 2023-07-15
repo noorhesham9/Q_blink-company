@@ -2,9 +2,6 @@ import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import FormikControl from "./FormikControl";
 import { Button, Stack } from "@mui/material";
-// import emailjs from "@emailjs/browser";
-// import LoaderTwo from "../LoaderTwo";
-import { useState } from "react";
 
 const initialValues = {
   name: "",
@@ -38,8 +35,14 @@ function FormikContainer() {
                 type="submit"
                 variant="contained"
                 sx={{
+                  fontSize: "18px",
+                  fontWeight: "bold",
+                  fontFamily: "var(--second-font)",
                   bgcolor: "rgba(0,0,0,.5)",
-                  "&:hover": { bgcolor: "rgba(0,0,0,.5)" },
+                  "&:hover": {
+                    bgcolor: "var(--primary-color)",
+                    color: "black",
+                  },
                   m: "15px 0",
                   p: "10px",
                   borderRadius: "10px",

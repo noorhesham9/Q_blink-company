@@ -19,6 +19,13 @@ function TextArea(Props) {
           },
           bgcolor: "rgba(0,0,0,.5)",
           m: "15px 0",
+          "& .MuiInputLabel-root.Mui-focused": {
+            color: "var(--primary-color)",
+          },
+          "& .MuiOutlinedInput-root:focus-within .MuiOutlinedInput-notchedOutline":
+            {
+              borderColor: "var(--primary-color)",
+            },
         }}
         label="A few words about the project"
         multiline
