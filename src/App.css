@@ -22,7 +22,9 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
-
+body.no-scroll {
+  overflow: hidden;
+}
 h1,
 h2,
 h3 {
@@ -47,6 +49,7 @@ a {
   --primary-color: rgb(255, 247, 0);
   --biggest-font-size: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
   --h1-font-size: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);
+  --h5-font-size: 22px;
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 90%);
   --bg-color: hsl(216, 100%, 5%);
@@ -72,6 +75,9 @@ a {
     var(--bg-color) 0%,
     var(--bg-color) 100%
   );
+}
+.background-Color{
+ background-color: hsl(216, 100%, 5%)
 }
 button {
   cursor: pointer;

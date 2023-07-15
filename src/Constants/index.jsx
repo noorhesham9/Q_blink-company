@@ -7,3 +7,62 @@ const info = {
 };
 
 export { info };
+
+export const links = [
+  {
+    name: "Home",
+    path: "home",
+  },
+  {
+    name: "About",
+    path: "about",
+  },
+  {
+    name: "Works",
+    path: "works",
+  },
+  {
+    name: "Team",
+    path: "team",
+  },
+  {
+    name: "Testimonials",
+    path: "testimonials",
+  },
+  {
+    name: "Pricing",
+    path: "pricing",
+  },
+  {
+    name: "Contact",
+    path: "contact",
+  },
+];
+export const Shape = (className) => {
+  return (
+    <svg
+      className={className.className}
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40"
+      fill="var(--primary-color)"
+      viewBox="0 0 200 200">
+      <path
+        fillRule="evenodd"
+        d="M200 98.523A41.9 41.9 0 0 1 188.941 100h-44.708c-23.116 0-41.855 18.739-41.855 41.854v49.465c0 2.976-.311 5.88-.901 8.681A41.888 41.888 0 0 1 100 188.941v-44.708c0-23.116-18.739-41.855-41.854-41.855H8.68a42.08 42.08 0 0 1-8.68-.901A41.888 41.888 0 0 1 11.06 100h44.707c23.116 0 41.855-18.739 41.855-41.854V8.68c0-2.976.31-5.88.901-8.681A41.9 41.9 0 0 1 100 11.06v44.707c0 23.116 18.739 41.855 41.855 41.855h49.464c2.976 0 5.88.31 8.681.901Z"
+        clipRule="evenodd"></path>
+      <defs>
+        {/* <linearGradient
+              id="paint0_linear_105_296"
+              x1="100"
+              x2="100"
+              y1="0"
+              y2="200"
+              gradientUnits="userSpaceOnUse">
+              <stop stopColor="#DF99F7"></stop>
+              <stop offset="1" stopColor="#FFDBB0"></stop>
+            </linearGradient> */}
+      </defs>
+    </svg>
+  );
+};
