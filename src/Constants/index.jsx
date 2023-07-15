@@ -1,12 +1,17 @@
-const info = {
+import Project1 from "../assets/image/project 1.png";
+import Project2 from "../assets/image/project 2.png";
+// import Project3 from "./assets/project3.jpeg";
+// import Project4 from "./assets/project4.jpeg";
+// import Project5 from "./assets/project5.jpg";
+// import Project6 from "./assets/project6.jpg";
+
+export const info = {
   one: "Welcome to Q-Blink! We are a team of passionate developers who specialize in creating beautiful and functional frontend websites for businesses of all sizes. Our mission is to help our clients establish a strong online presence and achieve their digital goals through effective website development.",
   two: "At Q-Blink, we understand that your website is often the first impression customers have of your business. That's why we take great care in designing and developing websites that not only look stunning, but also provide a seamless user experience. From the initial design concept to the final product, we work closely with our clients to ensure that every detail is just right.",
   three:
     "Our team has years of experience in web development, and we pride ourselves on staying up-to-date with the latest trends and technologies in the industry. We use cutting-edge tools and techniques to create websites that are fast, responsive, and optimized for search engines. Our expertise in frontend development includes HTML, CSS, JavaScript, and experience using the React framework.",
   four: "At Q-Blink, we believe that building strong relationships with our clients is key to our success. We take the time to understand your business and your goals, and we work collaboratively with you to create a website that meets your specific needs. Whether you are looking to launch a brand new website or update an existing one or fix any bugs in your website, we are here to help.",
 };
-
-export { info };
 
 export const links = [
   {
@@ -423,3 +428,52 @@ export const Shape = (className) => {
 //     </>
 //   );
 // };
+
+export const projects = [
+  {
+    id: 1,
+    img: Project1,
+    title: "zoe portfolio",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    link: "https://zoemillerportfolio.netlify.app/",
+  },
+  {
+    id: 2,
+    img: Project2,
+    title: "elnaira",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    link: "https://zoemillerportfolio.netlify.app/",
+  },
+  // {
+  //   id: 3,
+  //   img: Project3,
+  //   title: "Ro portfolio",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  // link: "https://zoemillerportfolio.netlify.app/",
+  // },
+
+  // {
+  //   id: 4,
+  //   img: Project4,
+  //   title: "john smith",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  // },
+  // {
+  //   id: 5,
+  //   img: Project5,
+  //   title: "esp university",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  // },
+  // {
+  //   id: 6,
+  //   img: Project6,
+  //   title: "Kana",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  // },
+];
