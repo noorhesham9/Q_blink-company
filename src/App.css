@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body,
 button,
 input,
@@ -76,8 +72,8 @@ a {
     var(--bg-color) 100%
   );
 }
-.background-Color{
- background-color: hsl(216, 100%, 5%)
+.background-Color {
+  background-color: hsl(216, 100%, 5%);
 }
 button {
   cursor: pointer;

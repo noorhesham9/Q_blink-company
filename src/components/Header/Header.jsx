@@ -255,10 +255,6 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a href="#pricing">Pricing</a>
-          </li>
-          <li>
-            <a href="#contact">Contacts</a>
             <Link
               to={"contact"}
               spy={true}
