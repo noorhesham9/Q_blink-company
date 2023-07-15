@@ -393,7 +393,7 @@ const Header = () => {
             <a href="#pricing">Pricing</a>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <a href="#contact">Contacts</a>
           </li>
         </ul>
       </div>
