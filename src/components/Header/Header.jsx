@@ -218,7 +218,7 @@ const Header = () => {
               Works{" "}
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to={"team"}
               spy={true}
@@ -229,8 +229,8 @@ const Header = () => {
               href="#team">
               Team{" "}
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link
               to={"testimonials"}
               spy={true}
@@ -241,8 +241,8 @@ const Header = () => {
               href="#testimonials">
               Testimonials{" "}
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link
               to={"pricing"}
               spy={true}
@@ -253,7 +253,7 @@ const Header = () => {
               href="#pricing">
               Pricing{" "}
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to={"contact"}
