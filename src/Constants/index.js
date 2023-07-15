@@ -7,3 +7,34 @@ const info = {
 };
 
 export { info };
+
+export const links = [
+  {
+    name: "Home",
+    path: "home",
+  },
+  {
+    name: "About",
+    path: "about",
+  },
+  {
+    name: "Works",
+    path: "works",
+  },
+  {
+    name: "Team",
+    path: "team",
+  },
+  {
+    name: "Testimonials",
+    path: "testimonials",
+  },
+  {
+    name: "Pricing",
+    path: "pricing",
+  },
+  {
+    name: "Contact",
+    path: "contact",
+  },
+];
