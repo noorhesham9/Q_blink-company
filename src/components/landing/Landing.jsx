@@ -191,6 +191,7 @@ const Landing = () => {
                 posiyion: "relative",
                 transition: "0.2s",
                 backgroundColor: "var(--primary-color)",
+                border: "1px solid var(--primary-color)",
                 color: "black",
                 "&:hover": {
                   border: "1px solid var(--primary-color)",
