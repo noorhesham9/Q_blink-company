@@ -674,3 +674,19 @@ const Image4 = (width) => {
     </svg>
   );
 };
+export const bubbleInfo = [
+  {
+    at: "At",
+    name: "Q-Blink",
+    info: "We can help you to ",
+  },
+  {
+    info: "Create Full Responsive website looking Great on all devices",
+  },
+  {
+    info: "Create Full Responsive website looking Great on all devices",
+  },
+  {
+    info: "Create Full Responsive website looking Great on all devices",
+  },
+];
