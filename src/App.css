@@ -80,8 +80,15 @@ a {
     var(--bg-color-alt) 0%,
     var(--bg-color-alt) 100%
   );
+
+  --textShdowLanding: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
+    2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgb(0 0 0 / 20%);
 }
 .light-theme {
+  --textShdowLanding: 2px 2px hsl(0deg 0% 100%), -2px 2px hsl(0, 0%, 0%),
+    2px -2px hsl(0deg 0% 100%), -2px -2px hsl(0, 0%, 0%),
+    5px 5px rgba(0, 0, 0, 0.2);
+
   --container-color: rgb(253, 255, 227);
 
   --button-color: white;
