@@ -20,7 +20,7 @@ const svgVariants = {
   },
 
   visible: {
-    fill: "#fff",
+    fill: "var(--title-color)",
     opacity: 1,
     transition: { duration: 2 },
   },

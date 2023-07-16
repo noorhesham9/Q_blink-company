@@ -25,7 +25,7 @@ function About() {
   };
 
   return (
-    <Box id="about" className="section__gradient-1 " py="100px">
+    <Box id="about" className="section__gradient-2" py="100px">
       <Container className="containerforAbout">
         <motion.div variants={textVariant()}>
           <Typography
@@ -36,6 +36,7 @@ function About() {
               fontSize: { sm: "30px", lg: "50px" },
               fontWeight: "bold",
               fontFamily: "var(--second-font)",
+              color: "var(--text-color)",
             }}>
             <span style={{ color: "var(--primary-color)" }}>About</span> US
           </Typography>
@@ -124,14 +125,14 @@ function About() {
             href="#works"
             sx={{
               backgroundColor: "var(--primary-color)",
-              color: "black",
+              color: "var(--button-color)",
               marginLeft: "10px",
               width: "fit-content",
               fontWeight: "600",
               border: "1px solid var(--primary-color)",
               "&:hover": {
                 backgroundColor: "transparent",
-                color: "white",
+                color: "var(--primary-color)",
               },
             }}
             variant="contained">
@@ -142,14 +143,14 @@ function About() {
             href="#contact"
             sx={{
               backgroundColor: "var(--primary-color)",
-              color: "black",
+              color: "var(--button-color)",
               marginLeft: "10px",
               width: "fit-content",
               fontWeight: "600",
               border: "1px solid var(--primary-color)",
               "&:hover": {
                 backgroundColor: "transparent",
-                color: "white",
+                color: "var(--primary-color)",
               },
             }}
             variant="contained">
