@@ -81,7 +81,7 @@
   left: 0;
 }
 .header .header__links .Header__links-ul li a.active {
-  color: rgb(255, 247, 0);
+  color: var(--primary-color);
 }
 .header .header__links .Header__links-ul li a.active::before {
   width: 60%;

@@ -9,7 +9,7 @@ import Landing from "./components/landing/Landing";
 // import { Stack } from "@mui/material";
 function App() {
   return (
-    <>
+    <div className="light-theme">
       <Header />
       <Landing />
       <About />
@@ -17,7 +17,7 @@ function App() {
       <Works />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

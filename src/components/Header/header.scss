@@ -87,7 +87,7 @@
             left: 0;
           }
           &.active {
-            color: rgb(255, 247, 0);
+            color: var(--primary-color);
             &::before {
               width: 60%;
             }
