@@ -32,8 +32,18 @@ function Works() {
           Works
         </span>
       </Typography>
-      <Container>
+      <Container
+        sx={{
+          maxWidth: "100%",
+          overflow: "hidden",
+        }}>
         <Swiper
+          style={{
+            maxWidth: "100%",
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+          }}
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards, Pagination]}
@@ -60,6 +70,7 @@ function Works() {
                       borderRadius: "6px",
                       fontWeight: 700,
                       marginTop: "23px",
+                      marginBottom: "30px",
                       marginLeft: "10px",
                       "&:hover": {
                         backgroundColor: "black",

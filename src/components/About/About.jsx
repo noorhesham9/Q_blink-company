@@ -5,8 +5,20 @@ import { fadeIn, textVariant } from "../../utils/motion";
 import "./about.css";
 import { useState } from "react";
 import { info } from "../../Constants/index";
+import { useRef } from "react";
+import { useEffect } from "react";
 function About() {
   const [expanded, setExpanded] = useState(false);
+  const [height1, setHeight1] = useState(0);
+  const typo1 = useRef();
+
+  useEffect(() => {
+    if (typo1.current === undefined || typo1.current === null) {
+      setHeight1(0);
+    } else {
+      setHeight1(typo1.current.clientHeight + 5);
+    }
+  }, [expanded]);
 
   const toggleExpansion = () => {
     setExpanded(!expanded);
@@ -34,7 +46,7 @@ function About() {
             color: "var( --text-color)",
           }}>
           <Typography
-            className="typographyforABout"
+            className="typographyforABout "
             fontSize={{ xs: "16px", sm: "18px" }}
             mb="30px">
             {info.one}
@@ -45,15 +57,17 @@ function About() {
             mb="30px">
             {info.two}
           </Typography>
+
+          {/* aniamte ..... */}
           <AnimatePresence>
             <motion.div
-              className="textsContain"
+              className={expanded ? "expand textsContain" : "textsContain"}
               initial={{ height: "500px" }}
-              animate={{ height: expanded ? "220px" : "0" }}
+              animate={{ height: expanded ? `${height1}px` : "0" }}
               transition={{ duration: 0.5 }}
               style={{ overflow: "hidden" }}>
               {expanded && (
-                <motion.div>
+                <div ref={typo1}>
                   <Typography
                     className="typographyforABout"
                     fontSize={{ xs: "16px", sm: "18px" }}
@@ -66,7 +80,7 @@ function About() {
                     mb="30px">
                     {info.four}
                   </Typography>
-                </motion.div>
+                </div>
               )}
             </motion.div>
           </AnimatePresence>
@@ -91,7 +105,7 @@ function About() {
                   color: "var(--text-color)",
                 },
               }}>
-              {expanded ? "Read less" : "Read more"}
+              {expanded ? `Read less` : `Read more`}
             </Button>
           </Box>
 

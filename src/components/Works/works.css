@@ -1,5 +1,4 @@
 .mySwiper {
-  height: 480px;
   width: 390px;
   max-width: 100%;
 }
@@ -37,7 +36,7 @@
 }
 
 .swiper-pagination {
-  position: relative;
+  position: relative !important;
   margin-top: 10px;
 }
 
