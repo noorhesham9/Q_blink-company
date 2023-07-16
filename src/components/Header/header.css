@@ -80,10 +80,10 @@
   transition: all 0.3s var(--transition);
   left: 0;
 }
-.header .header__links .Header__links-ul li.active a {
+.header .header__links .Header__links-ul li a.active {
   color: rgb(255, 247, 0);
 }
-.header .header__links .Header__links-ul li.active a::before {
+.header .header__links .Header__links-ul li a.active::before {
   width: 60%;
 }
 .header .header__links .buttonForNav {

@@ -13,7 +13,7 @@ function About() {
   };
 
   return (
-    <Box className="section__gradient-1 " py="100px">
+    <Box id="about" className="section__gradient-1 " py="100px">
       <Container className="containerforAbout">
         <motion.div variants={textVariant()}>
           <Typography

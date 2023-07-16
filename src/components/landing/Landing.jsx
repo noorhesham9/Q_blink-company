@@ -121,7 +121,7 @@ const Image4 = (width) => {
 
 const Landing = () => {
   return (
-    <section className=" section landing__section">
+    <section id="home" className=" section landing__section">
       <div
         className="shape"
         style={{

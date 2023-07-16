@@ -6,12 +6,16 @@ import { useState } from "react";
 import { ImageLogo, Shape, links } from "../../Constants";
 import { Link } from "react-scroll";
 import { Box } from "@mui/material";
+import * as Scroll from "react-scroll";
 
+var scrollSpy = Scroll.scrollSpy;
+console.log(scrollSpy.currentPositionY);
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
   const [theme, setTheme] = useState("");
 
+  const [activeClass, setactiveClass] = useState(true);
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);
@@ -19,9 +23,16 @@ const Header = () => {
       setScrollNav(false);
     }
   };
+  const changeAc = () => {
+    setactiveClass(false);
+  };
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+    window.addEventListener("scroll", changeAc);
   }, []);
+  useEffect(() => {
+    console.log(activeClass);
+  }, [activeClass]);
 
   const toggleTheme = () => {
     if (theme === "light-theme") {
@@ -82,6 +93,7 @@ const Header = () => {
               return (
                 <li key={index} className="nav__item">
                   <Link
+                    activeClass="active"
                     className="nav__link text-cs"
                     to={path}
                     spy={true}
@@ -99,8 +111,10 @@ const Header = () => {
         </Box>
 
         <ul className="Header__links-ul">
-          <li className="active">
+          <li>
             <Link
+              className={activeClass ? "active" : ""}
+              activeClass="active"
               to={"home"}
               spy={true}
               hashSpy={true}
@@ -113,18 +127,19 @@ const Header = () => {
 
           <li>
             <Link
+              activeClass="active"
               to={"about"}
               spy={true}
               hashSpy={true}
               smooth={true}
               offset={-100}
-              duration={500}
-              href="#about">
+              duration={500}>
               About
             </Link>
           </li>
           <li>
             <Link
+              activeClass="active"
               to={"works"}
               spy={true}
               hashSpy={true}
@@ -173,7 +188,8 @@ const Header = () => {
           </li> */}
           <li>
             <Link
-              to={"contact"}
+              activeClass="active"
+              to={"contacts"}
               spy={true}
               hashSpy={true}
               smooth={true}

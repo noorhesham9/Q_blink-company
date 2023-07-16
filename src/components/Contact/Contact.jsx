@@ -34,7 +34,7 @@ import { Shape } from "../../Constants";
 
 const Contact = () => {
   return (
-    <Box className=" section__gradient-1" py="100px">
+    <Box id="contacts" className=" section__gradient-1" py="100px">
       <Container>
         <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
           <Stack
@@ -75,4 +75,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Contact);

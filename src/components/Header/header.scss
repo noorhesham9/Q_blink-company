@@ -86,9 +86,7 @@
             transition: all 0.3s var(--transition);
             left: 0;
           }
-        }
-        &.active {
-          a {
+          &.active {
             color: rgb(255, 247, 0);
             &::before {
               width: 60%;
