@@ -8,7 +8,6 @@ import { Link } from "react-scroll";
 import { Box } from "@mui/material";
 
 const Header = ({ settheme, theme }) => {
-  console.log(settheme);
   const [showMenu, setShowMenu] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
   // const [theme, setTheme] = useState("");

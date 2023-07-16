@@ -4,7 +4,10 @@ import { Link } from "react-scroll";
 function Footer() {
   return (
     <Box
-      className="background-Color"
+      className="background-Coolor"
+      sx={{
+        borderTop: "1px solid var(--primary-color)",
+      }}
       borderTop="1px solid #ffffff36"
       py="5px"
       display="flex"
@@ -28,6 +31,7 @@ function Footer() {
         className="AboutUS"
         sx={{
           textAlign: "center",
+          color: "var(--text-color)",
           // marginBottom: "7px",
           fontSize: "20px",
           fontWeight: "bold",
@@ -39,6 +43,7 @@ function Footer() {
       </Typography>
       <Typography
         sx={{
+          color: "var(--text-color)",
           fontSize: "20px",
           fontWeight: "bold",
           fontFamily: "var(--second-font)",
