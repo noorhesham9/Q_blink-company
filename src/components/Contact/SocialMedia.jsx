@@ -9,20 +9,26 @@ import {
 } from "@mui/icons-material";
 function SocialMedia() {
   return (
-    <Stack justifyContent="center" borderRadius="10px">
+    <Stack
+      justifyContent="center"
+      direction={{ xs: "row", sm: "column" }}
+      flexWrap={"wrap"}
+      gap={"10px"}
+      borderRadius="10px">
       <IconButton
         href=""
         target="blank"
         sx={{
-          color: "white",
+          color: "var(--button-color)",
+          backgroundColor: "var(--primary-color)",
+          "&:hover": {
+            color: "var(--primary-color)",
+          },
         }}>
         <LinkedIn
           sx={{
             fontSize: "30px",
             transition: ".4s",
-            "&:hover": {
-              color: "var(--primary-color)",
-            },
           }}
         />
       </IconButton>
@@ -31,16 +37,16 @@ function SocialMedia() {
         href=""
         target="blank"
         sx={{
-          color: "white",
+          color: "var(--button-color)",
+          backgroundColor: "var(--primary-color)",
+          "&:hover": {
+            color: "var(--primary-color)",
+          },
         }}>
         <GitHub
           sx={{
             fontSize: "30px",
             transition: ".4s",
-
-            "&:hover": {
-              color: "var(--primary-color)",
-            },
           }}
         />
       </IconButton>
@@ -49,15 +55,16 @@ function SocialMedia() {
         href=""
         target="blank"
         sx={{
-          color: "white",
+          color: "var(--button-color)",
+          backgroundColor: "var(--primary-color)",
+          "&:hover": {
+            color: "var(--primary-color)",
+          },
         }}>
         <Twitter
           sx={{
             fontSize: "30px",
             transition: ".4s",
-            "&:hover": {
-              color: "var(--primary-color)",
-            },
           }}
         />
       </IconButton>
@@ -66,15 +73,16 @@ function SocialMedia() {
         href=""
         target="blank"
         sx={{
-          color: "white",
+          color: "var(--button-color)",
+          backgroundColor: "var(--primary-color)",
+          "&:hover": {
+            color: "var(--primary-color)",
+          },
         }}>
         <WhatsApp
           sx={{
             fontSize: "30px",
             transition: ".4s",
-            "&:hover": {
-              color: "var(--primary-color)",
-            },
           }}
         />
       </IconButton>
@@ -83,15 +91,16 @@ function SocialMedia() {
         href=""
         target="blank"
         sx={{
-          color: "white",
+          color: "var(--button-color)",
+          backgroundColor: "var(--primary-color)",
+          "&:hover": {
+            color: "var(--primary-color)",
+          },
         }}>
         <Instagram
           sx={{
             fontSize: "30px",
             transition: ".4s",
-            "&:hover": {
-              color: "var(--primary-color)",
-            },
           }}
         />
       </IconButton>

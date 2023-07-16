@@ -14,13 +14,14 @@ function Input(Props) {
         sx={{
           m: "15px 0",
           width: "100%",
-          "& label": { color: "white" },
+          "& label": { color: "var(--text-color)" },
           "& input": {
-            color: "white",
-            bgcolor: "rgba(0,0,0,.5)",
+            color: "var(--text-color)",
+            bgcolor: "rgba(0,0,0,.4)",
             borderRadius: "10px",
           },
           "& .MuiInputLabel-root.Mui-focused": {
+            fontWeight: "700",
             color: "var(--primary-color)",
           },
           "& .MuiOutlinedInput-root:focus-within .MuiOutlinedInput-notchedOutline":

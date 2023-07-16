@@ -32,8 +32,9 @@ function About() {
             className="AboutUS"
             sx={{
               textAlign: "center",
-              marginBottom: "7px",
-              fontSize: { sm: "30px", lg: "50px" },
+              marginBottom: "20px",
+
+              fontSize: { sm: "50px", xs: "30px" },
               fontWeight: "bold",
               fontFamily: "var(--second-font)",
               color: "var(--text-color)",
