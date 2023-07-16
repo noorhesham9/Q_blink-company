@@ -8,7 +8,6 @@ import { Link } from "react-scroll";
 import { Box } from "@mui/material";
 
 const Header = ({ settheme, theme }) => {
-  console.log(settheme);
   const [showMenu, setShowMenu] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
   // const [theme, setTheme] = useState("");
@@ -122,7 +121,6 @@ const Header = ({ settheme, theme }) => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={-100}
               duration={500}>
               About
             </Link>
@@ -134,8 +132,8 @@ const Header = ({ settheme, theme }) => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={-100}
               duration={500}
+              offset={-100}
               href="#projects">
               Works{" "}
             </Link>
@@ -183,8 +181,8 @@ const Header = ({ settheme, theme }) => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={-100}
               duration={500}
+              offset={-100}
               href="#contacts">
               Contacts{" "}
             </Link>

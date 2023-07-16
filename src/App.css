@@ -75,8 +75,20 @@ a {
     var(--bg-color) 0%,
     var(--bg-color) 100%
   );
+  --four-gradient: linear-gradient(
+    180deg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color-alt) 100%
+  );
+
+  --textShdowLanding: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
+    2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgb(0 0 0 / 20%);
 }
 .light-theme {
+  --textShdowLanding: 2px 2px hsl(0deg 0% 100%), -2px 2px hsl(0, 0%, 0%),
+    2px -2px hsl(0deg 0% 100%), -2px -2px hsl(0, 0%, 0%),
+    5px 5px rgba(0, 0, 0, 0.2);
+
   --container-color: rgb(253, 255, 227);
 
   --button-color: white;
@@ -103,9 +115,17 @@ a {
     var(--bg-color) 0%,
     var(--bg-color) 100%
   );
+  --four-gradient: linear-gradient(
+    180deg,
+    var(--bg-color-alt) 0%,
+    var(--bg-color-alt) 100%
+  );
 }
-.background-Color {
+/* .background-Color {
   background-color: hsl(216, 100%, 5%);
+} */
+.background-Coolor {
+  background-image: var(--four-gradient);
 }
 button {
   cursor: pointer;

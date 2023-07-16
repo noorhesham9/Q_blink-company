@@ -7,7 +7,7 @@ import SendIcon from "@mui/icons-material/Send";
 import "swiper/css/pagination";
 import { Button, IconButton } from "@mui/material";
 import { Image1, Shape, bubbleInfo } from "../../Constants";
-
+import { Link } from "react-scroll";
 const Landing = () => {
   return (
     <section id="home" className=" section landing__section">
@@ -73,7 +73,6 @@ const Landing = () => {
           </div> */}
           <div className="landing__title-buttons">
             <Button
-              href="#contact"
               className="landing__title-button landing__title-button-contact"
               variant="contained"
               sx={{
@@ -102,7 +101,14 @@ const Landing = () => {
                 />
               }
               size="large">
-              Contact US
+              <Link
+                spy={true}
+                hashSpy={true}
+                smooth={true}
+                duration={500}
+                to="contacts">
+                Contact US
+              </Link>
               <span
                 className="sharta"
                 style={{

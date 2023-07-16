@@ -31,8 +31,7 @@
   span {
     color: var(--primary-color);
   }
-  text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
-    2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgb(0 0 0 / 20%);
+  text-shadow: var(--textShdowLanding);
 }
 
 .landing__title-p {
