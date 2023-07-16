@@ -44,7 +44,7 @@ a {
 }
 :root {
   --button-color: black;
-
+  --shadowbuppleLanding: inset 0 0 0 9px #ffffff4d;
   --primary-color: rgb(255, 247, 0);
   --primary-color-shadow: rgb(255, 247, 0, 45%);
   --biggest-font-size: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
@@ -85,6 +85,7 @@ a {
     2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgb(0 0 0 / 20%);
 }
 .light-theme {
+  --shadowbuppleLanding: inset 0 0 0 9px #0000004d;
   --textShdowLanding: 2px 2px hsl(0deg 0% 100%), -2px 2px hsl(0, 0%, 0%),
     2px -2px hsl(0deg 0% 100%), -2px -2px hsl(0, 0%, 0%),
     5px 5px rgba(0, 0, 0, 0.2);

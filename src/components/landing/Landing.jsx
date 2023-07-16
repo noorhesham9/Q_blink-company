@@ -40,8 +40,8 @@ const Landing = () => {
             <span className="text-cs">Q-blink</span> Company
           </h2>
           <p className="landing__title-p">
-            we are a <span>Frontend Company</span>. we can help you to creat a
-            full responsive websites.
+            we are a <span>Frontend Company</span>. we can help you to create
+            you own website.
           </p>
           {/* <div className="landing__title-socials">
             <div className="socials">
@@ -129,7 +129,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <Stack className="Landing__Images">
+        <Stack display={{ md: "none", lg: "flex" }} className="Landing__Images">
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
@@ -154,7 +154,10 @@ const Landing = () => {
                     }}>
                     <Typography
                       fontSize={{ xs: "16px", sm: "22px" }}
-                      textAlign="center">
+                      textAlign="center"
+                      sx={{
+                        color: " var(--text-color)",
+                      }}>
                       {info.at}{" "}
                       <span
                         style={{

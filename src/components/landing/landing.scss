@@ -46,12 +46,12 @@
 }
 
 .swiperContaienr {
-  background-color: black;
+  background-color: var(--container-color);
   border-radius: 1rem;
   padding: 20px !important;
   width: 100%;
   animation: profile__animate 9s ease-in-out infinite;
-  box-shadow: inset 0 0 0 9px #ffffff4d;
+  box-shadow: var(--shadowbuppleLanding);
   height: auto;
 }
 
@@ -129,7 +129,7 @@
     padding: 0;
   }
   .Landing__Images {
-    display: none;
+    display: none !important;
   }
   .Landing__container {
     justify-content: center;
