@@ -19,8 +19,9 @@ function About() {
           <Typography
             className="AboutUS"
             sx={{
+              textAlign: "center",
               marginBottom: "7px",
-              fontSize: "35px",
+              fontSize: { sm: "30px", lg: "50px" },
               fontWeight: "bold",
               fontFamily: "var(--second-font)",
             }}>
