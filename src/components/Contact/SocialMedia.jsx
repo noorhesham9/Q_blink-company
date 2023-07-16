@@ -9,116 +9,92 @@ import {
 } from "@mui/icons-material";
 function SocialMedia() {
   return (
-    <Stack
-      justifyContent="space-around"
-      borderRadius="10px"
-      alignItems="center"
-      bgcolor="#ffffff29">
-      <motion.div
-        whileHover={{
-          x: -10,
-        }}
-        transition={{
-          duration: 0.4,
-        }}
+    <Stack justifyContent="center" borderRadius="10px">
+      <IconButton
+        href=""
+        target="blank"
         sx={{
-          position: "relative",
-          display: "inline-block",
+          color: "white",
         }}>
-        <IconButton
-          href=""
-          target="blank"
+        <LinkedIn
           sx={{
-            color: "white",
-          }}>
-          <LinkedIn
-            sx={{ fontSize: { xs: "30px", sm: "40px", color: "yellow" } }}
-          />
-        </IconButton>
-      </motion.div>
-      <motion.div
-        whileHover={{
-          x: -10,
-        }}
-        transition={{
-          duration: 0.4,
-        }}
-        sx={{
-          position: "relative",
-          display: "inline-block",
-        }}>
-        <IconButton
-          href=""
-          target="blank"
-          sx={{
-            color: "white",
-          }}>
-          <GitHub sx={{ fontSize: { xs: "30px", sm: "40px" } }} />
-        </IconButton>
-      </motion.div>
+            fontSize: "30px",
+            transition: ".4s",
+            "&:hover": {
+              color: "var(--primary-color)",
+            },
+          }}
+        />
+      </IconButton>
 
-      <motion.div
-        whileHover={{
-          x: -10,
-        }}
-        transition={{
-          duration: 0.4,
-        }}
+      <IconButton
+        href=""
+        target="blank"
         sx={{
-          position: "relative",
-          display: "inline-block",
+          color: "white",
         }}>
-        <IconButton
-          href=""
-          target="blank"
+        <GitHub
           sx={{
-            color: "white",
-          }}>
-          <Twitter sx={{ fontSize: { xs: "30px", sm: "40px" } }} />
-        </IconButton>
-      </motion.div>
+            fontSize: "30px",
+            transition: ".4s",
 
-      <motion.div
-        whileHover={{
-          x: -10,
-        }}
-        transition={{
-          duration: 0.4,
-        }}
-        sx={{
-          position: "relative",
-          display: "inline-block",
-        }}>
-        <IconButton
-          href=""
-          target="blank"
-          sx={{
-            color: "white",
-          }}>
-          <WhatsApp sx={{ fontSize: { xs: "30px", sm: "40px" } }} />
-        </IconButton>
-      </motion.div>
+            "&:hover": {
+              color: "var(--primary-color)",
+            },
+          }}
+        />
+      </IconButton>
 
-      <motion.div
-        whileHover={{
-          x: -10,
-        }}
-        transition={{
-          duration: 0.4,
-        }}
+      <IconButton
+        href=""
+        target="blank"
         sx={{
-          position: "relative",
-          display: "inline-block",
+          color: "white",
         }}>
-        <IconButton
-          href=""
-          target="blank"
+        <Twitter
           sx={{
-            color: "white",
-          }}>
-          <Instagram sx={{ fontSize: { xs: "30px", sm: "40px" } }} />
-        </IconButton>
-      </motion.div>
+            fontSize: "30px",
+            transition: ".4s",
+            "&:hover": {
+              color: "var(--primary-color)",
+            },
+          }}
+        />
+      </IconButton>
+
+      <IconButton
+        href=""
+        target="blank"
+        sx={{
+          color: "white",
+        }}>
+        <WhatsApp
+          sx={{
+            fontSize: "30px",
+            transition: ".4s",
+            "&:hover": {
+              color: "var(--primary-color)",
+            },
+          }}
+        />
+      </IconButton>
+
+      <IconButton
+        href=""
+        target="blank"
+        sx={{
+          color: "white",
+        }}>
+        <Instagram
+          sx={{
+            fontSize: "30px",
+            transition: ".4s",
+            "&:hover": {
+              color: "var(--primary-color)",
+            },
+          }}
+        />
+      </IconButton>
     </Stack>
   );
 }
