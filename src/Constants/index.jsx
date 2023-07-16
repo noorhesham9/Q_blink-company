@@ -453,6 +453,7 @@ export const projects = [
     title: "john smith",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    link: "https://john-smithhh.netlify.app/",
   },
 
   {
@@ -461,7 +462,7 @@ export const projects = [
     title: "Ro portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-    link: "https://zoemillerportfolio.netlify.app/",
+    link: "https://noorhesham9.github.io/ro-Portfolio/",
   },
 
   {
@@ -470,6 +471,7 @@ export const projects = [
     title: "3d portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    link: "https://3dportfoioforahmad.netlify.app/",
   },
   {
     id: 6,
@@ -477,5 +479,6 @@ export const projects = [
     title: "ESP university",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    link: "https://noorhesham9.github.io/esp-university/",
   },
 ];
