@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "./landing.css";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import "swiper/css";
 import SendIcon from "@mui/icons-material/Send";
 import "swiper/css/pagination";
 import { Button, IconButton } from "@mui/material";
-import { Image1, Shape } from "../../Constants";
+import { Image1, Shape, bubbleInfo } from "../../Constants";
 
 const Landing = () => {
   return (
@@ -137,12 +137,12 @@ const Landing = () => {
             className="swiperContaienr"
             pagination={{ clickable: true }}
             modules={[Autoplay, Pagination, Navigation]}>
-            <SwiperSlide className="landing__Images_image">
+            {/* <SwiperSlide className="landing__Images_image">
               <div className="svgContain">
                 <Image1 width={"300px"} />
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide className="landing__Images_image">
+            <SwiperSlide className="landing__Images_image">
               <div className="svgContain">
                 <Image2 width={"300px"} />
               </div>
@@ -157,6 +157,21 @@ const Landing = () => {
                 <Image4 width={"300px"} />
               </div>
             </SwiperSlide> */}
+            {bubbleInfo.map((info, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <Box
+                    height="250px"
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}>
+                    {info.info}
+                  </Box>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
         {/* </div> */}
