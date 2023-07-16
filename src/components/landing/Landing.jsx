@@ -129,7 +129,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <Stack className="Landing__Images">
+        <Stack display={{ md: "none", lg: "flex" }} className="Landing__Images">
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
@@ -154,7 +154,10 @@ const Landing = () => {
                     }}>
                     <Typography
                       fontSize={{ xs: "16px", sm: "22px" }}
-                      textAlign="center">
+                      textAlign="center"
+                      sx={{
+                        color: " var(--text-color)",
+                      }}>
                       {info.at}{" "}
                       <span
                         style={{
