@@ -40,8 +40,8 @@ const Landing = () => {
             <span className="text-cs">Q-blink</span> Company
           </h2>
           <p className="landing__title-p">
-            we are a <span>Frontend Company</span>. we are creating a full
-            responsive websites
+            we are a <span>Frontend Company</span>. we can help you to creat a
+            full responsive websites.
           </p>
           {/* <div className="landing__title-socials">
             <div className="socials">
