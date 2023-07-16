@@ -19,6 +19,7 @@
 .LAnding__title {
   font-size: 22px;
   max-width: 52%;
+  color:var(--text-color)
 }
 .LAnding__title span {
   color: var(--primary-color);
