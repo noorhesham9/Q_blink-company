@@ -1,9 +1,9 @@
 import Project1 from "../assets/image/project 1.png";
-import Project2 from "../assets/image/project 2.png";
-// import Project3 from "./assets/project3.jpeg";
-// import Project4 from "./assets/project4.jpeg";
-// import Project5 from "./assets/project5.jpg";
-// import Project6 from "./assets/project6.jpg";
+import Project2 from "../assets/image/project 3.png";
+import Project3 from "../assets/image/project 2.png";
+import Project4 from "../assets/image/project 4.png";
+import Project5 from "../assets/image/project 5.png";
+import Project6 from "../assets/image/project 6.png";
 
 export const info = {
   one: "Welcome to Q-Blink! We are a team of passionate developers who specialize in creating beautiful and functional frontend websites for businesses of all sizes. Our mission is to help our clients establish a strong online presence and achieve their digital goals through effective website development.",
@@ -441,39 +441,41 @@ export const projects = [
   {
     id: 2,
     img: Project2,
-    title: "elnaira",
+    title: "Noor portfolio",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    link: "https://bolbyportfolio.netlify.app/",
+  },
+
+  {
+    id: 3,
+    img: Project3,
+    title: "john smith",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  },
+
+  {
+    id: 4,
+    img: Project4,
+    title: "Ro portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     link: "https://zoemillerportfolio.netlify.app/",
   },
-  // {
-  //   id: 3,
-  //   img: Project3,
-  //   title: "Ro portfolio",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-  // link: "https://zoemillerportfolio.netlify.app/",
-  // },
 
-  // {
-  //   id: 4,
-  //   img: Project4,
-  //   title: "john smith",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-  // },
-  // {
-  //   id: 5,
-  //   img: Project5,
-  //   title: "esp university",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-  // },
-  // {
-  //   id: 6,
-  //   img: Project6,
-  //   title: "Kana",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-  // },
+  {
+    id: 5,
+    img: Project5,
+    title: "3d portfolio",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  },
+  {
+    id: 6,
+    img: Project6,
+    title: "ESP university",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+  },
 ];
