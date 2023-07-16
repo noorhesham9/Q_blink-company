@@ -17,9 +17,9 @@
 }
 
 .LAnding__title {
+  color: var(--text-color);
   font-size: 22px;
   max-width: 52%;
-  color:var(--text-color)
 }
 .LAnding__title span {
   color: var(--primary-color);
@@ -37,6 +37,7 @@
 }
 
 .landing__title-p {
+  color: var(--text-color);
   padding-bottom: 20px;
   font-size: 19px;
 }

@@ -6,15 +6,12 @@ import { useState } from "react";
 import { ImageLogo, Shape, links } from "../../Constants";
 import { Link } from "react-scroll";
 import { Box } from "@mui/material";
-import * as Scroll from "react-scroll";
 
-var scrollSpy = Scroll.scrollSpy;
-console.log(scrollSpy.currentPositionY);
-const Header = () => {
+const Header = ({ settheme, theme }) => {
+  console.log(settheme);
   const [showMenu, setShowMenu] = useState(false);
   const [scrollNav, setScrollNav] = useState(false);
-  const [theme, setTheme] = useState("");
-
+  // const [theme, setTheme] = useState("");
   const [activeClass, setactiveClass] = useState(true);
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -34,13 +31,6 @@ const Header = () => {
     console.log(activeClass);
   }, [activeClass]);
 
-  const toggleTheme = () => {
-    if (theme === "light-theme") {
-      setTheme("dark-theme");
-    } else {
-      setTheme("light-theme");
-    }
-  };
   useEffect(() => {
     document.body.classList.toggle("no-scroll", showMenu);
   }, [showMenu]);
@@ -51,8 +41,8 @@ const Header = () => {
         <ImageLogo />
       </div>
       <div className="header__links">
-        <div className="theme__toggler " onClick={toggleTheme}>
-          {theme === "light-theme" ? (
+        <div className="theme__toggler " onClick={settheme}>
+          {theme === "dark-theme" ? (
             <WbSunnyIcon
               className="header__theme-sun"
               style={{

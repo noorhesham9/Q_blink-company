@@ -16,7 +16,7 @@
 .thanks {
   font-weight: 600 !important;
   letter-spacing: 0.017em !important;
-  text-shadow: 3px 3px rgba(255, 247, 0, 0.15);
+  text-shadow: 3px 3px 2px var(--primary-color-shadow);
 }
 
 @media (max-width: 500px) {

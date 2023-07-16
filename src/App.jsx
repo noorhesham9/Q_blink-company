@@ -14,7 +14,11 @@ function App() {
   const [theme, setTheme] = useState("light-theme");
 
   const toggleTheme = () => {
-    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+    if (theme === "light-theme") {
+      setTheme("dark-theme");
+    } else {
+      setTheme("light-theme");
+    }
   };
   // const [mode, setMode] = useState("light");
   // const modeTheme = createTheme({
@@ -25,7 +29,7 @@ function App() {
 
   return (
     <Box className={theme}>
-      <Header />
+      <Header settheme={toggleTheme} theme={theme} />
       <Landing />
       <About />
       {/* <Testimonials /> */}

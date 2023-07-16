@@ -2,7 +2,7 @@ import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import FormikControl from "./FormikControl";
 import { Button, Stack } from "@mui/material";
-
+import "./form.css";
 const initialValues = {
   name: "",
   email: "",
@@ -25,7 +25,7 @@ function FormikContainer() {
       onSubmit={handleSubmit}>
       {(formik) => {
         return (
-          <Form>
+          <Form className="form">
             <Stack justifyContent="space-between">
               <FormikControl control="input" name="name" type="name" />
               <FormikControl control="input" name="email" type="email" />
@@ -39,9 +39,10 @@ function FormikContainer() {
                   fontWeight: "bold",
                   fontFamily: "var(--second-font)",
                   bgcolor: "rgba(0,0,0,.5)",
+                  color: "var(--primary-color)",
                   "&:hover": {
                     bgcolor: "var(--primary-color)",
-                    color: "black",
+                    color: "var(--button-color)",
                   },
                   m: "15px 0",
                   p: "10px",

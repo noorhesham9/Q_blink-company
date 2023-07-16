@@ -19,7 +19,8 @@ function Works() {
       }}>
       <Typography
         sx={{
-          fontSize: { sm: "30px", lg: "50px" },
+          color: "var(--title-color)",
+          fontSize: { sm: "50px", xs: "30px" },
           fontFamily: "var(--second-font)",
           textAlign: "center",
           marginBottom: "20px",
@@ -50,30 +51,24 @@ function Works() {
           pagination={{ clickable: true }}
           className="mySwiper">
           {projects.map(({ id, img, title, description, link }) => {
-            console.log(`${link}`);
             return (
               <SwiperSlide className="sideswiiipe" key={id}>
                 <img className="works__images" src={img} alt="" />
                 <h3 className="title">{title}</h3>
                 <p className="title__description">{description}</p>
-                <Box
-                  sx={
-                    {
-                      // width: "100%",
-                    }
-                  }>
+                <Box>
                   <Button
                     variant="contained"
                     sx={{
                       backgroundColor: "var(--primary-color)",
-                      color: "black",
+                      color: "var(--button-color)",
                       borderRadius: "6px",
                       fontWeight: 700,
                       marginTop: "23px",
                       marginBottom: "30px",
                       marginLeft: "10px",
                       "&:hover": {
-                        backgroundColor: "black",
+                        backgroundColor: "var(--button-color)",
                         color: "var(--primary-color)",
                       },
                     }}

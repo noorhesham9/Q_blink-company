@@ -77,15 +77,16 @@ const Landing = () => {
               className="landing__title-button landing__title-button-contact"
               variant="contained"
               sx={{
-                posiyion: "relative",
-                transition: "0.2s",
+                position: "relative",
+                transition: "0.3s",
                 backgroundColor: "var(--primary-color)",
                 border: "1px solid var(--primary-color)",
-                color: "black",
+                color: "var(--button-color)",
+
                 "&:hover": {
                   border: "1px solid var(--primary-color)",
                   color: "var(--primary-color)",
-                  backgroundColor: "black",
+                  backgroundColor: "transparent",
                   ">span": {
                     ".MuiSvgIcon-root": {
                       color: "var(--primary-color)",
@@ -97,7 +98,7 @@ const Landing = () => {
                 <SendIcon
                   sx={{
                     transition: "0.3s",
-                    color: "black",
+                    color: "var(--button-color)",
                   }}
                 />
               }
@@ -184,7 +185,7 @@ const Landing = () => {
           preserveAspectRatio="none">
           <defs>
             <linearGradient id="MyGradient" gradientTransform="rotate(90)">
-              <stop offset="10%" stopColor="#000000" />
+              <stop offset="10%" stopColor="var(--bg-color-alt)" />
               <stop offset="85%" stopColor="var(--primary-color)" />
             </linearGradient>
           </defs>

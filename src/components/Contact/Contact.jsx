@@ -35,17 +35,28 @@ import { Shape } from "../../Constants";
 const Contact = () => {
   return (
     <Box id="contacts" className=" section__gradient-1" py="100px">
+      <Typography
+        mb={"20px"}
+        textAlign={"center"}
+        color="var(--title-color)"
+        fontSize={{ sm: "50px", xs: "30px" }}
+        fontWeight="bold"
+        fontFamily="var(--second-font)">
+        <span style={{ color: "var(--primary-color)" }}>Contact</span> US
+      </Typography>
       <Container>
         <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
           <Stack
             direction={{ xs: "column-reverse", sm: "row" }}
-            justifyContent="center">
+            justifyContent="center"
+            alignItems={"center"}
+            gap={{ xs: "20px", sm: "10px" }}>
             <SocialMedia />
             <Box
               className="background-Color"
               sx={{
-                // bgcolor: "rgb(5 0 32)",
-                p: "50px 30px!important",
+                bgcolor: "var(--container-color)",
+                p: "35px 30px!important",
                 color: "white",
                 width: "100%",
                 maxWidth: "450px!important",
@@ -53,16 +64,8 @@ const Contact = () => {
               }}>
               <Stack sx={{ textAlign: { xs: "center", sm: "start" } }}>
                 <motion.div variants={textVariant()}>
-                  <Typography color="#f9fafbe6">GET IN TOUCH</Typography>
-                  <Typography
-                    color="white"
-                    fontSize={{ sm: "60px", xs: "30px" }}
-                    fontWeight="bold"
-                    fontFamily="var(--second-font)">
-                    <span style={{ color: "var(--primary-color)" }}>
-                      Contact
-                    </span>{" "}
-                    US
+                  <Typography color="var(--text-color)">
+                    GET IN TOUCH
                   </Typography>
                 </motion.div>
               </Stack>
