@@ -121,7 +121,6 @@ const Header = ({ settheme, theme }) => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={-100}
               duration={500}>
               About
             </Link>
@@ -133,8 +132,8 @@ const Header = ({ settheme, theme }) => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={-100}
               duration={500}
+              offset={-100}
               href="#projects">
               Works{" "}
             </Link>
@@ -182,8 +181,8 @@ const Header = ({ settheme, theme }) => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={-100}
               duration={500}
+              offset={-100}
               href="#contacts">
               Contacts{" "}
             </Link>
