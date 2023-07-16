@@ -684,9 +684,9 @@ export const bubbleInfo = [
     info: "Create Full Responsive website looking Great on all devices",
   },
   {
-    info: "Create Full Responsive website looking Great on all devices",
+    info: "Enhance your website by fixing bugs and updating it with the latest technologies.",
   },
   {
-    info: "Create Full Responsive website looking Great on all devices",
+    info: "create a website that is tailored to your needs and exceeds your expectations.No matter what your budget is   ",
   },
 ];

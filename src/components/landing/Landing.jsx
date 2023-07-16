@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import "./landing.css";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import "swiper/css";
 import SendIcon from "@mui/icons-material/Send";
 import "swiper/css/pagination";
@@ -77,16 +77,15 @@ const Landing = () => {
               className="landing__title-button landing__title-button-contact"
               variant="contained"
               sx={{
-                position: "relative",
-                transition: "0.3s",
+                posiyion: "relative",
+                transition: "0.2s",
                 backgroundColor: "var(--primary-color)",
                 border: "1px solid var(--primary-color)",
-                color: "var(--button-color)",
-
+                color: "black",
                 "&:hover": {
                   border: "1px solid var(--primary-color)",
                   color: "var(--primary-color)",
-                  backgroundColor: "transparent",
+                  backgroundColor: "black",
                   ">span": {
                     ".MuiSvgIcon-root": {
                       color: "var(--primary-color)",
@@ -98,7 +97,7 @@ const Landing = () => {
                 <SendIcon
                   sx={{
                     transition: "0.3s",
-                    color: "var(--button-color)",
+                    color: "black",
                   }}
                 />
               }
@@ -124,7 +123,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="Landing__Images">
+        <Stack className="Landing__Images">
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
@@ -137,26 +136,6 @@ const Landing = () => {
             className="swiperContaienr"
             pagination={{ clickable: true }}
             modules={[Autoplay, Pagination, Navigation]}>
-            {/* <SwiperSlide className="landing__Images_image">
-              <div className="svgContain">
-                <Image1 width={"300px"} />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="landing__Images_image">
-              <div className="svgContain">
-                <Image2 width={"300px"} />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="landing__Images_image">
-              <div className="svgContain">
-                <Image3 width={"300px"} />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="landing__Images_image">
-              <div className="svgContain">
-                <Image4 width={"300px"} />
-              </div>
-            </SwiperSlide> */}
             {bubbleInfo.map((info, index) => {
               return (
                 <SwiperSlide key={index}>
@@ -167,13 +146,26 @@ const Landing = () => {
                       justifyContent: "center",
                       alignItems: "center",
                     }}>
-                    {info.info}
+                    <Typography
+                      fontSize={{ xs: "16px", sm: "22px" }}
+                      textAlign="center">
+                      {info.at}{" "}
+                      <span
+                        style={{
+                          color: "var(--primary-color)",
+                          fontWeight: "bold",
+                        }}>
+                        {info.name}
+                      </span>
+                      <br />
+                      {info.info}
+                    </Typography>
                   </Box>
                 </SwiperSlide>
               );
             })}
           </Swiper>
-        </div>
+        </Stack>
         {/* </div> */}
       </Container>
       <div className="bottom-button"></div>
@@ -185,7 +177,7 @@ const Landing = () => {
           preserveAspectRatio="none">
           <defs>
             <linearGradient id="MyGradient" gradientTransform="rotate(90)">
-              <stop offset="10%" stopColor="var(--bg-color-alt)" />
+              <stop offset="10%" stopColor="#000000" />
               <stop offset="85%" stopColor="var(--primary-color)" />
             </linearGradient>
           </defs>
