@@ -141,7 +141,7 @@ function About() {
           </Button>
           <Button
             className="bookaCall"
-            href="#contact"
+            href="#contacts"
             sx={{
               backgroundColor: "var(--primary-color)",
               color: "var(--button-color)",
