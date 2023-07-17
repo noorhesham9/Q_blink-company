@@ -516,7 +516,7 @@ export const projects = [
     img: Project1,
     title: "zoe portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "Zoe Miller's portfolio website is a web application built using modern web development technologies and frameworks. The website showcases Zoe's skills, projects, and accomplishments as a web developer. It incorporates React, Framer Motion, React Scrolling, and Swiper to create an engaging and interactive user experience.",
     link: "https://zoemillerportfolio.netlify.app/",
   },
   {
@@ -524,7 +524,7 @@ export const projects = [
     img: Project2,
     title: "Noor portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "Bolby Doe's portfolio website is a modern and dynamic web application created using React, Framer Motion, React Scrolling, and Swiper. The website serves as a platform to showcase Bolby's skills, projects, and achievements as a professional. It incorporates cutting-edge technologies to deliver a visually captivating and interactive user experience.",
     link: "https://bolbyportfolio.netlify.app/",
   },
 
@@ -533,7 +533,7 @@ export const projects = [
     img: Project3,
     title: "john smith",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "John Smith's portfolio website is a modern and professional web application created using React, Email JS, and Swiper. The website serves as a platform to showcase John's skills, projects, and professional experience. It incorporates advanced technologies to deliver a visually appealing and interactive user experience.",
     link: "https://john-smithhh.netlify.app/",
   },
 
@@ -542,7 +542,7 @@ export const projects = [
     img: Project4,
     title: "Ro portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "Ro Portfolio is a sleek and modern web application developed using HTML, CSS, and vanilla JavaScript. The portfolio serves as a showcase for Ro's work, skills, and creative projects. It incorporates essential web technologies to deliver a visually appealing and user-friendly experience.",
     link: "https://noorhesham9.github.io/ro-Portfolio/",
   },
 
@@ -551,7 +551,7 @@ export const projects = [
     img: Project5,
     title: "3d portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "Ahmed's 3D portfolio is a visually stunning and interactive web application developed using React, Email.js, Three.js, Framer Motion, and React Router. The portfolio showcases Ahmed's work, skills, and projects with a focus on immersive 3D experiences. It combines cutting-edge technologies to deliver a captivating and engaging user experience.",
     link: "https://3dportfoioforahmad.netlify.app/",
   },
   {
@@ -559,7 +559,7 @@ export const projects = [
     img: Project6,
     title: "ESP university",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "The ESP University website is a modern and informative web application developed using HTML, CSS, and vanilla JavaScript. The website serves as the digital presence of ESP University, offering essential information, resources, and services to students, faculty, and the general public. It is designed to be user-friendly, visually appealing, and easily accessible.",
     link: "https://noorhesham9.github.io/esp-university/",
   },
 ];
