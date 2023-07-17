@@ -9,7 +9,7 @@ function SocialMedia() {
       gap={"10px"}
       borderRadius="10px">
       <IconButton
-        href=""
+        href="https://wh.ms/2001024864825"
         target="blank"
         sx={{
           color: "var(--button-color)",
@@ -27,7 +27,7 @@ function SocialMedia() {
       </IconButton>
 
       <IconButton
-        href=""
+        href="https://t.me/Q_blink"
         target="blank"
         sx={{
           color: "var(--button-color)",

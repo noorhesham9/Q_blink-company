@@ -7,6 +7,7 @@ import { useState } from "react";
 import { info } from "../../Constants/index";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { Link } from "react-scroll";
 function About() {
   const [expanded, setExpanded] = useState(false);
   const [height1, setHeight1] = useState(0);
@@ -121,42 +122,57 @@ function About() {
         </motion.div>
 
         <Stack className="ourworksandbook" spacing={4} direction="row">
-          <Button
-            className="ourWorks"
-            href="#works"
-            sx={{
-              backgroundColor: "var(--primary-color)",
-              color: "var(--button-color)",
-              marginLeft: "10px",
-              width: "fit-content",
-              fontWeight: "600",
-              border: "1px solid var(--primary-color)",
-              "&:hover": {
-                backgroundColor: "transparent",
-                color: "var(--primary-color)",
-              },
-            }}
-            variant="contained">
-            Our Works
-          </Button>
-          <Button
-            className="bookaCall"
-            href="#contacts"
-            sx={{
-              backgroundColor: "var(--primary-color)",
-              color: "var(--button-color)",
-              marginLeft: "10px",
-              width: "fit-content",
-              fontWeight: "600",
-              border: "1px solid var(--primary-color)",
-              "&:hover": {
-                backgroundColor: "transparent",
-                color: "var(--primary-color)",
-              },
-            }}
-            variant="contained">
-            Book a Call
-          </Button>
+          <Link
+            spy={true}
+            hashSpy={true}
+            smooth={true}
+            duration={500}
+            to="works">
+            <Button
+              className="ourWorks"
+              href="#works"
+              sx={{
+                backgroundColor: "var(--primary-color)",
+                color: "var(--button-color)",
+                marginLeft: "10px",
+                width: "fit-content",
+                fontWeight: "600",
+                border: "1px solid var(--primary-color)",
+                "&:hover": {
+                  backgroundColor: "transparent",
+                  color: "var(--primary-color)",
+                },
+              }}
+              variant="contained">
+              Our Works
+            </Button>
+          </Link>
+
+          <Link
+            spy={true}
+            hashSpy={true}
+            smooth={true}
+            duration={500}
+            to="contacts">
+            <Button
+              className="bookaCall"
+              href="#contacts"
+              sx={{
+                backgroundColor: "var(--primary-color)",
+                color: "var(--button-color)",
+                marginLeft: "10px",
+                width: "fit-content",
+                fontWeight: "600",
+                border: "1px solid var(--primary-color)",
+                "&:hover": {
+                  backgroundColor: "transparent",
+                  color: "var(--primary-color)",
+                },
+              }}
+              variant="contained">
+              Book a Call
+            </Button>
+          </Link>
         </Stack>
       </Container>
     </Box>

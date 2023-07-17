@@ -41,7 +41,7 @@ const Landing = () => {
           </h2>
           <p className="landing__title-p">
             we are a <span>Frontend Company</span>. we can help you to create
-            you own website.
+            your own website.
           </p>
           {/* <div className="landing__title-socials">
             <div className="socials">
@@ -72,60 +72,67 @@ const Landing = () => {
             </div>
           </div> */}
           <div className="landing__title-buttons">
-            <Button
-              className="landing__title-button landing__title-button-contact"
-              variant="contained"
-              sx={{
-                position: "relative",
-                transition: "0.3s",
-                backgroundColor: "var(--primary-color)",
-                border: "1px solid var(--primary-color)",
-                color: "var(--button-color)",
-                "&:hover": {
+            <Link
+              spy={true}
+              hashSpy={true}
+              smooth={true}
+              duration={500}
+              to="contacts">
+              <Button
+                className="landing__title-button landing__title-button-contact"
+                variant="contained"
+                sx={{
+                  position: "relative",
+                  transition: "0.3s",
+                  backgroundColor: "var(--primary-color)",
                   border: "1px solid var(--primary-color)",
-                  color: "var(--primary-color)",
-                  backgroundColor: "transparent",
-                  ">span": {
-                    ".MuiSvgIcon-root": {
-                      color: "var(--primary-color)",
+                  color: "var(--button-color)",
+                  "&:hover": {
+                    border: "1px solid var(--primary-color)",
+                    color: "var(--primary-color)",
+                    backgroundColor: "transparent",
+                    ">span": {
+                      ".MuiSvgIcon-root": {
+                        color: "var(--primary-color)",
+                      },
                     },
                   },
-                },
-              }}
-              endIcon={
-                <SendIcon
-                  sx={{
-                    transition: "0.3s",
-                    color: "var(--button-color)",
-                  }}
-                />
-              }
-              size="large">
-              <Link
-                spy={true}
-                hashSpy={true}
-                smooth={true}
-                duration={500}
-                to="contacts">
+                }}
+                endIcon={
+                  <SendIcon
+                    sx={{
+                      transition: "0.3s",
+                      color: "var(--button-color)",
+                    }}
+                  />
+                }
+                size="large">
                 Contact US
-              </Link>
-              <span
-                className="sharta"
-                style={{
-                  width: "22px",
-                  height: "2px",
-                  backgroundColor: "var(--primary-color)",
-                  position: "absolute",
-                  right: "-22px",
-                }}></span>
-            </Button>
-            <Button
-              className="landing__title-button landing__title-button-project"
-              sx={{
-                color: "var(--primary-color)",
-              }}>
-              Projects
-            </Button>
+                <span
+                  className="sharta"
+                  style={{
+                    width: "22px",
+                    height: "2px",
+                    backgroundColor: "var(--primary-color)",
+                    position: "absolute",
+                    right: "-22px",
+                  }}></span>
+              </Button>
+            </Link>
+            <Link
+              spy={true}
+              hashSpy={true}
+              smooth={true}
+              duration={500}
+              to="works">
+              <Button
+                className="landing__title-button landing__title-button-project"
+                sx={{
+                  color: "var(--primary-color)",
+                }}>
+                Projects
+              </Button>
+            </Link>
           </div>
         </div>
 
