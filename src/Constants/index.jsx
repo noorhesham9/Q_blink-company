@@ -522,30 +522,24 @@ export const projects = [
   },
   {
     id: 2,
-    img: Project3,
-    title: "john smith",
-    description: "a 3d portfolio .",
-    link: "https://john-smithhh.netlify.app/",
-  },
-  {
-    id: 3,
     img: Project2,
     title: "Noor portfolio",
     description:
       "Bolby Doe's portfolio website is a modern and dynamic web application created using React, Framer Motion, React Scrolling, and Swiper. The website serves as a platform to showcase Bolby's skills, projects, and achievements as a professional. It incorporates cutting-edge technologies to deliver a visually captivating and interactive user experience.",
     link: "https://bolbyportfolio.netlify.app/",
   },
+
   {
-    id: 4,
-    img: Project5,
-    title: "3d portfolio",
+    id: 3,
+    img: Project3,
+    title: "john smith",
     description:
       "John Smith's portfolio website is a modern and professional web application created using React, Email JS, and Swiper. The website serves as a platform to showcase John's skills, projects, and professional experience. It incorporates advanced technologies to deliver a visually appealing and interactive user experience.",
     link: "https://john-smithhh.netlify.app/",
   },
 
   {
-    id: 5,
+    id: 4,
     img: Project4,
     title: "Ro portfolio",
     description:
@@ -568,14 +562,6 @@ export const projects = [
     description:
       "The ESP University website is a modern and informative web application developed using HTML, CSS, and vanilla JavaScript. The website serves as the digital presence of ESP University, offering essential information, resources, and services to students, faculty, and the general public. It is designed to be user-friendly, visually appealing, and easily accessible.",
     link: "https://noorhesham9.github.io/esp-university/",
-  },
-  {
-    id: 7,
-    img: Project7,
-    title: "Alex",
-    description:
-      "This Template converted from psd to html,css open it to know more about it.",
-    link: "https://yahiasala7.github.io/Template-3/",
   },
 ];
 export const Image1 = (width) => {
