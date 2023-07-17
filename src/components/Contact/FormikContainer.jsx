@@ -25,11 +25,11 @@ function FormikContainer() {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
 
         {
-          from_name: name,
+          from_name: `${name} `,
           to_name: "Q-Blink Company",
           from_email: email,
           to_email: "qblink02@gmail.com",
-          message: `the subject is ${subject} and the messasge is ${message}`,
+          message: `subject: ${subject}, messasge: ${message}, Email:${email} `,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
