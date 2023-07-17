@@ -1,12 +1,5 @@
-import { IconButton, Stack, Typography } from "@mui/material";
-import { motion } from "framer-motion";
-import {
-  GitHub,
-  Twitter,
-  LinkedIn,
-  WhatsApp,
-  Instagram,
-} from "@mui/icons-material";
+import { IconButton, Stack } from "@mui/material";
+import { WhatsApp, Telegram } from "@mui/icons-material";
 function SocialMedia() {
   return (
     <Stack
@@ -15,60 +8,6 @@ function SocialMedia() {
       flexWrap={"wrap"}
       gap={"10px"}
       borderRadius="10px">
-      <IconButton
-        href=""
-        target="blank"
-        sx={{
-          color: "var(--button-color)",
-          backgroundColor: "var(--primary-color)",
-          "&:hover": {
-            color: "var(--primary-color)",
-          },
-        }}>
-        <LinkedIn
-          sx={{
-            fontSize: "30px",
-            transition: ".4s",
-          }}
-        />
-      </IconButton>
-
-      <IconButton
-        href=""
-        target="blank"
-        sx={{
-          color: "var(--button-color)",
-          backgroundColor: "var(--primary-color)",
-          "&:hover": {
-            color: "var(--primary-color)",
-          },
-        }}>
-        <GitHub
-          sx={{
-            fontSize: "30px",
-            transition: ".4s",
-          }}
-        />
-      </IconButton>
-
-      <IconButton
-        href=""
-        target="blank"
-        sx={{
-          color: "var(--button-color)",
-          backgroundColor: "var(--primary-color)",
-          "&:hover": {
-            color: "var(--primary-color)",
-          },
-        }}>
-        <Twitter
-          sx={{
-            fontSize: "30px",
-            transition: ".4s",
-          }}
-        />
-      </IconButton>
-
       <IconButton
         href=""
         target="blank"
@@ -97,7 +36,7 @@ function SocialMedia() {
             color: "var(--primary-color)",
           },
         }}>
-        <Instagram
+        <Telegram
           sx={{
             fontSize: "30px",
             transition: ".4s",

@@ -9,7 +9,7 @@ function Footer() {
         borderTop: "1px solid var(--primary-color)",
       }}
       borderTop="1px solid #ffffff36"
-      py="5px"
+      py="7px"
       display="flex"
       justifyContent="space-between"
       alignItems={"center"}
