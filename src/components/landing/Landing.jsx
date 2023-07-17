@@ -5,8 +5,8 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import "swiper/css";
 import SendIcon from "@mui/icons-material/Send";
 import "swiper/css/pagination";
-import { Button, IconButton } from "@mui/material";
-import { Image1, Shape, bubbleInfo } from "../../Constants";
+import { Button } from "@mui/material";
+import { Shape, bubbleInfo } from "../../Constants";
 import { Link } from "react-scroll";
 const Landing = () => {
   return (

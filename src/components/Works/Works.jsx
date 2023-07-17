@@ -52,7 +52,12 @@ function Works() {
           className="mySwiper">
           {projects.map(({ id, img, title, description, link }) => {
             return (
-              <SwiperSlide className="sideswiiipe" key={id}>
+              <SwiperSlide
+                style={{
+                  height: "575px",
+                }}
+                className="sideswiiipe"
+                key={id}>
                 <img className="works__images" src={img} alt="" />
                 <h3 className="title">{title}</h3>
                 <p className="title__description">{description}</p>
