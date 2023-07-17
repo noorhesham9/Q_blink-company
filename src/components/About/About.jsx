@@ -149,6 +149,7 @@ function About() {
           </Link>
 
           <Link
+            className="marginBetweenbuttons"
             spy={true}
             hashSpy={true}
             smooth={true}
@@ -160,7 +161,7 @@ function About() {
               sx={{
                 backgroundColor: "var(--primary-color)",
                 color: "var(--button-color)",
-                marginLeft: "10px",
+                // marginLeft: "10px",
                 width: "fit-content",
                 fontWeight: "600",
                 border: "1px solid var(--primary-color)",

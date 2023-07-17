@@ -563,14 +563,14 @@ export const projects = [
       "The ESP University website is a modern and informative web application developed using HTML, CSS, and vanilla JavaScript. The website serves as the digital presence of ESP University, offering essential information, resources, and services to students, faculty, and the general public. It is designed to be user-friendly, visually appealing, and easily accessible.",
     link: "https://noorhesham9.github.io/esp-university/",
   },
-  {
-    id: 7,
-    img: Project7,
-    title: "Alex",
-    description:
-      "This Template converted from psd to html,css open it to know more about it.",
-    link: "https://yahiasala7.github.io/Template-3/",
-  },
+  // {
+  //   id: 7,
+  //   img: Project7,
+  //   title: "Alex",
+  //   description:
+  //     "This Template converted from psd to html,css open it to know more about it.",
+  //   link: "https://yahiasala7.github.io/Template-3/",
+  // },
 ];
 export const Image1 = (width) => {
   return (

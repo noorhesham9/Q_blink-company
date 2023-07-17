@@ -20,14 +20,16 @@
   letter-spacing: 0.017em !important;
   text-shadow: 3px 3px 2px var(--primary-color-shadow);
 }
+.marginBetweenbuttons {
+  // margin-left: 25px;
+  margin-left: 20px !important;
+}
 
 @media (max-width: 500px) {
   .AboutUS {
     text-align: center;
   }
-  .textsContain {
-    text-align: center;
-  }
+
   .buttooon {
     margin-top: 25px;
     justify-content: center;
@@ -41,11 +43,15 @@
     flex-wrap: wrap;
     flex-direction: column !important;
     .ourWorks {
+      margin-left: 0 !important;
+    }
+    .marginBetweenbuttons {
+      margin-left: 0px !important;
     }
     .bookaCall,
     .ourWorks {
       width: 130px;
-      margin: 0;
+
       margin-bottom: 10px;
       font-size: 13px;
       font-weight: 700;

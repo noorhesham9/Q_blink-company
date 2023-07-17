@@ -19,11 +19,12 @@
   text-shadow: 3px 3px 2px var(--primary-color-shadow);
 }
 
+.marginBetweenbuttons {
+  margin-left: 20px !important;
+}
+
 @media (max-width: 500px) {
   .AboutUS {
-    text-align: center;
-  }
-  .textsContain {
     text-align: center;
   }
   .buttooon {
@@ -39,10 +40,15 @@
     flex-wrap: wrap;
     flex-direction: column !important;
   }
+  .ourworksandbook .ourWorks {
+    margin-left: 0 !important;
+  }
+  .ourworksandbook .marginBetweenbuttons {
+    margin-left: 0px !important;
+  }
   .ourworksandbook .bookaCall,
   .ourworksandbook .ourWorks {
     width: 130px;
-    margin: 0;
     margin-bottom: 10px;
     font-size: 13px;
     font-weight: 700;
