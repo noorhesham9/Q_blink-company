@@ -4,6 +4,7 @@ import Project3 from "../assets/image/project 2.png";
 import Project4 from "../assets/image/project 4.png";
 import Project5 from "../assets/image/project 5.png";
 import Project6 from "../assets/image/project 6.png";
+import Project7 from "../assets/image/Project 7.png";
 import { motion } from "framer-motion";
 
 export const info = {
@@ -521,24 +522,30 @@ export const projects = [
   },
   {
     id: 2,
+    img: Project3,
+    title: "john smith",
+    description: "a 3d portfolio .",
+    link: "https://john-smithhh.netlify.app/",
+  },
+  {
+    id: 3,
     img: Project2,
     title: "Noor portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     link: "https://bolbyportfolio.netlify.app/",
   },
-
   {
-    id: 3,
-    img: Project3,
-    title: "john smith",
+    id: 4,
+    img: Project5,
+    title: "3d portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-    link: "https://john-smithhh.netlify.app/",
+    link: "https://3dportfoioforahmad.netlify.app/",
   },
 
   {
-    id: 4,
+    id: 5,
     img: Project4,
     title: "Ro portfolio",
     description:
@@ -547,20 +554,20 @@ export const projects = [
   },
 
   {
-    id: 5,
-    img: Project5,
-    title: "3d portfolio",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-    link: "https://3dportfoioforahmad.netlify.app/",
-  },
-  {
     id: 6,
     img: Project6,
     title: "ESP university",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "ESP University it's such an example of university website that provide all the information about the university,new & events,you can contact with them through the contact page and more....",
     link: "https://noorhesham9.github.io/esp-university/",
+  },
+  {
+    id: 7,
+    img: Project7,
+    title: "Alex",
+    description:
+      "This Template converted from psd to html,css open it to know more about it.",
+    link: "https://yahiasala7.github.io/Template-3/",
   },
 ];
 export const Image1 = (width) => {

@@ -72,7 +72,8 @@ function Works() {
                         color: "var(--primary-color)",
                       },
                     }}
-                    href={`${link}`}>
+                    href={`${link}`}
+                    target="blank">
                     Show Demo
                   </Button>
                 </Box>
