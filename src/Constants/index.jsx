@@ -5,6 +5,8 @@ import Project4 from "../assets/image/project 4.png";
 import Project5 from "../assets/image/project 5.png";
 import Project6 from "../assets/image/project 6.png";
 import Project7 from "../assets/image/Project 7.png";
+import mqeen from "../assets/image/mqeen.png";
+import yahia from "../assets/image/yahia.png";
 import { motion } from "framer-motion";
 
 export const info = {
@@ -522,15 +524,31 @@ export const projects = [
   },
   {
     id: 2,
+    img: mqeen,
+    title: "Mqeen",
+    description:
+      "A website of cars provide a full range of services for warranty and post-warranty maintenance and repair of any car. We’ll quickly and effectively eliminate the problem, efficiently and inexpensively..",
+    link: "https://mqeen.netlify.app",
+  },
+  {
+    id: 3,
     img: Project2,
     title: "Noor portfolio",
     description:
       "Bolby Doe's portfolio website is a modern and dynamic web application created using React, Framer Motion, React Scrolling, and Swiper. The website serves as a platform to showcase Bolby's skills, projects, and achievements as a professional. It incorporates cutting-edge technologies to deliver a visually captivating and interactive user experience.",
     link: "https://bolbyportfolio.netlify.app/",
   },
+  {
+    id: 4,
+    img: yahia,
+    title: "Yahia Salah",
+    description:
+      "yahia portfolio website is a modern and dynamic web application created using React, Framer Motion,Mui and Formik. The website serves as a platform to showcase yahia's skills, projects, and achievements as a professional. It incorporates cutting-edge technologies to deliver a visually captivating and interactive user experience.",
+    link: "https://yahiasalah.netlify.app/",
+  },
 
   {
-    id: 3,
+    id: 5,
     img: Project3,
     title: "john smith",
     description:
@@ -539,7 +557,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 6,
     img: Project4,
     title: "Ro portfolio",
     description:
@@ -548,7 +566,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 7,
     img: Project5,
     title: "3d portfolio",
     description:
@@ -556,21 +574,21 @@ export const projects = [
     link: "https://3dportfoioforahmad.netlify.app/",
   },
   {
-    id: 6,
+    id: 8,
     img: Project6,
     title: "ESP university",
     description:
       "The ESP University website is a modern and informative web application developed using HTML, CSS, and vanilla JavaScript. The website serves as the digital presence of ESP University, offering essential information, resources, and services to students, faculty, and the general public. It is designed to be user-friendly, visually appealing, and easily accessible.",
     link: "https://noorhesham9.github.io/esp-university/",
   },
-  // {
-  //   id: 7,
-  //   img: Project7,
-  //   title: "Alex",
-  //   description:
-  //     "This Template converted from psd to html,css open it to know more about it.",
-  //   link: "https://yahiasala7.github.io/Template-3/",
-  // },
+  {
+    id: 9,
+    img: Project7,
+    title: "Alex",
+    description:
+      "This Template converted from psd to html,css open it to know more about it.",
+    link: "https://yahiasala7.github.io/Template-3/",
+  },
 ];
 export const Image1 = (width) => {
   return (
