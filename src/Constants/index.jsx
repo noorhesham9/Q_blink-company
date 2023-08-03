@@ -525,7 +525,7 @@ export const projects = [
   {
     id: 2,
     img: mqeen,
-    title: "Mqeen",
+    title: "McQueen",
     description:
       "A website of cars provide a full range of services for warranty and post-warranty maintenance and repair of any car. We’ll quickly and effectively eliminate the problem, efficiently and inexpensively..",
     link: "https://mqeen.netlify.app",
